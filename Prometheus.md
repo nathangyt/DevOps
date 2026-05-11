@@ -1,4 +1,4 @@
-Exercice 1 :
+<h1>Exercice 1 :</h1>
 
 docker pull prom/prometheus:latest
 
@@ -10,7 +10,7 @@ http://localhost:9090
 docker logs prometheus
 <img width="1208" height="25" alt="image" src="https://github.com/user-attachments/assets/3fba8d41-ce38-4b7c-8620-878b1bd7a53d" />
 
-Exercice 2 : 
+<h1>Exercice 2 : </h1>
 
 docker rm -f prometheus
 
@@ -42,7 +42,7 @@ localhost:9090 sur le navigateur
 modifie le yml
 <img width="397" height="200" alt="image" src="https://github.com/user-attachments/assets/baa0ada9-715d-494b-b1ed-1a789d89f7eb" />
 
-Exercice 3 :
+<h1>Exercice 3 : </h1>
 
 docker run -d --name node-exporter -p 9100:9100 prom/node-exporter:latest
 
@@ -56,7 +56,7 @@ Table
 Graph
 <img width="1790" height="822" alt="image" src="https://github.com/user-attachments/assets/b169c1b9-db8a-4716-b934-6afb239c2139" />
 
-Exercice 4 : 
+<h1>Exercice 4 : </h1>
 
 Créer le fichier JSON
 <img width="519" height="461" alt="image" src="https://github.com/user-attachments/assets/ad20ffaf-083e-4674-8572-1c67bf8825ee" />
@@ -82,7 +82,7 @@ docker run -d `
 Quand on retire le port 8000 du JSON et qu'on attend 5sec 
 <img width="1899" height="459" alt="image" src="https://github.com/user-attachments/assets/95c923f2-f2a0-424f-8687-e43f9c13b2a1" />
 
-Exercice 5 :
+<h1>Exercice 5 : </h1>
 
 Le nouveau fichier api_rules.yml
 <img width="548" height="198" alt="image" src="https://github.com/user-attachments/assets/0ff3e906-b073-446b-9fec-2911062eae7d" />
@@ -93,6 +93,9 @@ rule_files:
 
 Dans status -> rules
 <img width="1876" height="232" alt="image" src="https://github.com/user-attachments/assets/2c8a1993-99d8-4820-a2e1-32682b67e94b" />
+
+Dans la query on mes : job:http_requests:rate5m et cela nous donne ceci car il n'y a pas l'api de lancer
+<img width="1902" height="322" alt="image" src="https://github.com/user-attachments/assets/c75163ea-91e2-4069-b534-8fd7551ef6f4" />
 
 
 
